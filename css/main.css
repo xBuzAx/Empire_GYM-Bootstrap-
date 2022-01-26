@@ -1,0 +1,181 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	font-family: "Raleway", sans-serif;
+	font-size: 1.6rem;
+}
+
+.color-red {
+	color: var(--bs-red);
+	/* $red-500 */
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
+
+.header-hero {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	z-index: 0;
+}
+
+.hero-text {
+	font-size: 4.5rem;
+}
+
+.welcome-text {
+	font-size: 2rem;
+}
+
+.hero-img {
+	background-image: url("../img/man-small.jpg");
+	background-position: center;
+}
+
+.nav-link,
+.navbar-toggler-icon {
+	margin: 0 2em;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.navbar-toggler {
+	padding: 1em;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+	color: var(--bs-red);
+}
+
+.aboutus .btn {
+	text-transform: uppercase;
+	padding: 1em;
+}
+
+.aboutus .card-group .card-title {
+	font-size: 2.4rem;
+	margin: 0.5em 0;
+}
+
+.carousel .carousel-item {
+	position: relative;
+	height: 600px;
+}
+
+.carousel .carousel-caption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 3em 0;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prices {
+	background-color: rgb(245, 245, 245);
+}
+
+.prices .card {
+	width: 97%;
+	margin: 1.5em 0;
+	box-shadow: 0 0 10px black;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.prices .card:hover {
+	transform: scale(1.03);
+}
+
+.prices .card h5 {
+	font-size: 3rem;
+	margin-bottom: 0.5em;
+}
+
+.prices .card .card-text {
+	font-size: 1.8rem;
+	margin: 1em 0;
+}
+
+.prices .card .card-text i {
+	font-size: 4rem;
+	text-shadow: 0 0 2px #000;
+}
+
+.prices .card .btn {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding: 0.5em 1em;
+}
+
+.contact h2 {
+	font-size: 2.6rem;
+	margin-bottom: 0.5em;
+}
+
+.contact-logo {
+	font-size: 3rem;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+	font-size: 1.6rem;
+}
+
+.contact .btn {
+	padding: 0.3em 0.8em;
+	font-size: 2rem;
+}
+
+/* ============= */
+@media (min-width: 992px) {
+	.header-hero {
+		height: 350px;
+	}
+
+	.hero-img {
+		background-image: url("../img/man-big.jpg");
+		background-position: center;
+	}
+
+	.prices .card {
+		width: 30%;
+		margin: 1.5em 1em;
+		padding: 1em;
+	}
+
+	.prices .card h5 {
+		font-size: 3.5rem;
+	}
+
+	.prices .card .card-text {
+		font-size: 2rem;
+	}
+
+	.prices .card .card-text i {
+		font-size: 5rem;
+	}
+
+	.prices .card .btn {
+		font-size: 1.8rem;
+	}
+}
